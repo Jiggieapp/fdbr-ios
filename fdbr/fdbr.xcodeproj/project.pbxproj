@@ -11,9 +11,6 @@
 		88564C3252892C8605EC8391 /* Pods_fdbrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
-		DA100CA41D5DA74E0053F9C4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA31D5DA74E0053F9C4 /* FirstViewController.swift */; };
-		DA100CA61D5DA74E0053F9C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA51D5DA74E0053F9C4 /* SecondViewController.swift */; };
-		DA100CA91D5DA74E0053F9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA100CA71D5DA74E0053F9C4 /* Main.storyboard */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
 		DA100CAE1D5DA74E0053F9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAC1D5DA74E0053F9C4 /* LaunchScreen.storyboard */; };
 		DA100CB91D5DA74F0053F9C4 /* fdbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CB81D5DA74F0053F9C4 /* fdbrTests.swift */; };
@@ -22,6 +19,20 @@
 		DA100CDD1D5DAB450053F9C4 /* FoundationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */; };
 		DA100CDE1D5DAB450053F9C4 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */; };
 		DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */; };
+		DA100CE71D5DAFE00053F9C4 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CE51D5DAFE00053F9C4 /* BaseTabBarController.swift */; };
+		DA100CE81D5DAFE00053F9C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CE61D5DAFE00053F9C4 /* BaseViewController.swift */; };
+		DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CEA1D5DB0880053F9C4 /* FeedListViewController.swift */; };
+		DA100CED1D5DB0880053F9C4 /* FeedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CEB1D5DB0880053F9C4 /* FeedListViewController.xib */; };
+		DA100CF01D5DB0990053F9C4 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CEE1D5DB0990053F9C4 /* ProductListViewController.swift */; };
+		DA100CF11D5DB0990053F9C4 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CEF1D5DB0990053F9C4 /* ProductListViewController.xib */; };
+		DA100CF41D5DB0AE0053F9C4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CF21D5DB0AE0053F9C4 /* ProfileViewController.swift */; };
+		DA100CF51D5DB0AE0053F9C4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CF31D5DB0AE0053F9C4 /* ProfileViewController.xib */; };
+		DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CF61D5DB0BC0053F9C4 /* LoginViewController.swift */; };
+		DA100CF91D5DB0BC0053F9C4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CF71D5DB0BC0053F9C4 /* LoginViewController.xib */; };
+		DA100CFC1D5DB0E90053F9C4 /* DiscoverListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CFA1D5DB0E90053F9C4 /* DiscoverListViewController.swift */; };
+		DA100CFD1D5DB0E90053F9C4 /* DiscoverListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CFB1D5DB0E90053F9C4 /* DiscoverListViewController.xib */; };
+		DA100D001D5DB0FE0053F9C4 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CFE1D5DB0FE0053F9C4 /* AddProductViewController.swift */; };
+		DA100D011D5DB0FE0053F9C4 /* AddProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CFF1D5DB0FE0053F9C4 /* AddProductViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +63,6 @@
 		D071DA9CFBCC7EC22E2AC452 /* Pods-fdbr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.debug.xcconfig"; sourceTree = "<group>"; };
 		DA100C9E1D5DA74E0053F9C4 /* Female Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Female Daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA100CA31D5DA74E0053F9C4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DA100CA51D5DA74E0053F9C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DA100CA81D5DA74E0053F9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA100CAD1D5DA74E0053F9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA100CAF1D5DA74E0053F9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +77,20 @@
 		DA100CD81D5DAB450053F9C4 /* icaew-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "icaew-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitHelper.swift; sourceTree = "<group>"; };
+		DA100CE51D5DAFE00053F9C4 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		DA100CE61D5DAFE00053F9C4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DA100CEA1D5DB0880053F9C4 /* FeedListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedListViewController.swift; sourceTree = "<group>"; };
+		DA100CEB1D5DB0880053F9C4 /* FeedListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedListViewController.xib; sourceTree = "<group>"; };
+		DA100CEE1D5DB0990053F9C4 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		DA100CEF1D5DB0990053F9C4 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		DA100CF21D5DB0AE0053F9C4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DA100CF31D5DB0AE0053F9C4 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		DA100CF61D5DB0BC0053F9C4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DA100CF71D5DB0BC0053F9C4 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DA100CFA1D5DB0E90053F9C4 /* DiscoverListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverListViewController.swift; sourceTree = "<group>"; };
+		DA100CFB1D5DB0E90053F9C4 /* DiscoverListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverListViewController.xib; sourceTree = "<group>"; };
+		DA100CFE1D5DB0FE0053F9C4 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		DA100CFF1D5DB0FE0053F9C4 /* AddProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductViewController.xib; sourceTree = "<group>"; };
 		E9D05E7194E53DED754A9578 /* Pods-fdbrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrTests/Pods-fdbrTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,9 +177,6 @@
 				DA100CD51D5DAB450053F9C4 /* Resources */,
 				DA100CDB1D5DAB450053F9C4 /* Views */,
 				DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */,
-				DA100CA31D5DA74E0053F9C4 /* FirstViewController.swift */,
-				DA100CA51D5DA74E0053F9C4 /* SecondViewController.swift */,
-				DA100CA71D5DA74E0053F9C4 /* Main.storyboard */,
 				DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */,
 				DA100CAC1D5DA74E0053F9C4 /* LaunchScreen.storyboard */,
 				DA100CAF1D5DA74E0053F9C4 /* Info.plist */,
@@ -193,6 +212,14 @@
 		DA100CD21D5DAB450053F9C4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA100CE01D5DAF850053F9C4 /* Adds */,
+				DA100CE11D5DAF850053F9C4 /* Discovers */,
+				DA100CE21D5DAF850053F9C4 /* Feeds */,
+				DA100CE31D5DAF850053F9C4 /* Products */,
+				DA100CE41D5DAF850053F9C4 /* Profiles */,
+				DA100CE91D5DB02C0053F9C4 /* Setups */,
+				DA100CE51D5DAFE00053F9C4 /* BaseTabBarController.swift */,
+				DA100CE61D5DAFE00053F9C4 /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +255,60 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DA100CE01D5DAF850053F9C4 /* Adds */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CFE1D5DB0FE0053F9C4 /* AddProductViewController.swift */,
+				DA100CFF1D5DB0FE0053F9C4 /* AddProductViewController.xib */,
+			);
+			path = Adds;
+			sourceTree = "<group>";
+		};
+		DA100CE11D5DAF850053F9C4 /* Discovers */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CFA1D5DB0E90053F9C4 /* DiscoverListViewController.swift */,
+				DA100CFB1D5DB0E90053F9C4 /* DiscoverListViewController.xib */,
+			);
+			path = Discovers;
+			sourceTree = "<group>";
+		};
+		DA100CE21D5DAF850053F9C4 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CEA1D5DB0880053F9C4 /* FeedListViewController.swift */,
+				DA100CEB1D5DB0880053F9C4 /* FeedListViewController.xib */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		DA100CE31D5DAF850053F9C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CEE1D5DB0990053F9C4 /* ProductListViewController.swift */,
+				DA100CEF1D5DB0990053F9C4 /* ProductListViewController.xib */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		DA100CE41D5DAF850053F9C4 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CF21D5DB0AE0053F9C4 /* ProfileViewController.swift */,
+				DA100CF31D5DB0AE0053F9C4 /* ProfileViewController.xib */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		DA100CE91D5DB02C0053F9C4 /* Setups */ = {
+			isa = PBXGroup;
+			children = (
+				DA100CF61D5DB0BC0053F9C4 /* LoginViewController.swift */,
+				DA100CF71D5DB0BC0053F9C4 /* LoginViewController.xib */,
+			);
+			path = Setups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,9 +423,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA100CF51D5DB0AE0053F9C4 /* ProfileViewController.xib in Resources */,
+				DA100CFD1D5DB0E90053F9C4 /* DiscoverListViewController.xib in Resources */,
 				DA100CAE1D5DA74E0053F9C4 /* LaunchScreen.storyboard in Resources */,
 				DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */,
-				DA100CA91D5DA74E0053F9C4 /* Main.storyboard in Resources */,
+				DA100CED1D5DB0880053F9C4 /* FeedListViewController.xib in Resources */,
+				DA100CF11D5DB0990053F9C4 /* ProductListViewController.xib in Resources */,
+				DA100CF91D5DB0BC0053F9C4 /* LoginViewController.xib in Resources */,
+				DA100D011D5DB0FE0053F9C4 /* AddProductViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,12 +578,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA100CE71D5DAFE00053F9C4 /* BaseTabBarController.swift in Sources */,
 				DA100CDD1D5DAB450053F9C4 /* FoundationHelper.swift in Sources */,
+				DA100D001D5DB0FE0053F9C4 /* AddProductViewController.swift in Sources */,
+				DA100CFC1D5DB0E90053F9C4 /* DiscoverListViewController.swift in Sources */,
+				DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */,
 				DA100CDC1D5DAB450053F9C4 /* APIHelper.swift in Sources */,
-				DA100CA61D5DA74E0053F9C4 /* SecondViewController.swift in Sources */,
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,
+				DA100CF41D5DB0AE0053F9C4 /* ProfileViewController.swift in Sources */,
+				DA100CE81D5DAFE00053F9C4 /* BaseViewController.swift in Sources */,
 				DA100CDE1D5DAB450053F9C4 /* NetworkHelper.swift in Sources */,
-				DA100CA41D5DA74E0053F9C4 /* FirstViewController.swift in Sources */,
+				DA100CF01D5DB0990053F9C4 /* ProductListViewController.swift in Sources */,
+				DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */,
 				DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,14 +626,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DA100CA71D5DA74E0053F9C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA100CA81D5DA74E0053F9C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA100CAC1D5DA74E0053F9C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
