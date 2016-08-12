@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
+  - SwiftHEXColors (1.0.4)
+  - SwiftyUserDefaults (2.2.0)
+  - UIAlertControllerExtension (1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4)
+  - Crashlytics
+  - Fabric
+  - Mantle (~> 2.0)
+  - SDWebImage (~> 3.8)
+  - SVProgressHUD (~> 2.0)
+  - SwiftHEXColors (~> 1.0)
+  - SwiftyUserDefaults (~> 2.2)
+  - UIAlertControllerExtension (~> 1.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  SwiftHEXColors: b0ecc7bd83a1aa2e1956f9ba51f55ebb2bcf86ef
+  SwiftyUserDefaults: e7c8197a9d4068702e7f2406a968cae413b8de27
+  UIAlertControllerExtension: d3aaf48590f182096b8bb81997ae54f24ccc07ab
+
+PODFILE CHECKSUM: bd23054256fddf7a648e84a63d5943e0a8d190bd
+
+COCOAPODS: 1.0.1

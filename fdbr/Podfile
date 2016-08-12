@@ -1,0 +1,30 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'fdbr' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  platform :ios, '8.0'
+  use_frameworks!
+
+  # Pods for fdbr
+    pod 'Alamofire', '~> 3.4'
+    pod 'SwiftyUserDefaults', '~> 2.2'
+    pod 'SwiftHEXColors', '~> 1.0'
+    pod 'UIAlertControllerExtension', '~> 1.1'
+    pod 'SVProgressHUD', '~> 2.0'
+    pod 'SDWebImage', '~>3.8'
+    pod 'Mantle', '~>2.0'
+    pod 'Fabric'
+    pod 'Crashlytics'
+
+  target 'fdbrTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'fdbrUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
