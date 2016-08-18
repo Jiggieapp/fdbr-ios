@@ -14,6 +14,7 @@ import SystemConfiguration
 class NetworkManager {
     
     static let APIBaseURL = "http://icaew-admin.jiggieapp.com/api/"
+    static let clientKey = "client01-jdfijfiosdjfdoYFBSDFnafE084314987FDBbhhjdsf89283847718hhfHIDHFKHSFKShhihfiewbbbvvQQhfurbb874820001240088"
     
     /**
      A wrapper function from `Alamofire.request`. Creates a request using the shared manager instance
@@ -33,10 +34,19 @@ class NetworkManager {
         let manager = Alamofire.Manager.sharedInstance
         manager.session.configuration.timeoutIntervalForRequest = 50
         
+        var headers = [String : String]()
+        headers["device"] = "1"
+        headers["key"] = clientKey
+
+        if let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String {
+            headers["version"] = version
+        }
+        
         return manager.request(method,
             URLString,
             parameters: parameters,
-            encoding: encoding)
+            encoding: encoding,
+            headers: headers)
     }
     
     /**
@@ -56,8 +66,17 @@ class NetworkManager {
         let manager = Alamofire.Manager.sharedInstance
         manager.session.configuration.timeoutIntervalForRequest = 50
         
+        var headers = [String : String]()
+        headers["device"] = "1"
+        headers["key"] = clientKey
+        
+        if let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String {
+            headers["version"] = version
+        }
+        
         Alamofire.upload(method,
             URLString,
+            headers: headers,
             multipartFormData: multipartFormData,
             encodingCompletion: encodingCompletion)
     }
