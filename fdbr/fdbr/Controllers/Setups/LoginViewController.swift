@@ -43,6 +43,12 @@ class LoginViewController: BaseViewController {
         self.emailField.becomeFirstResponder()
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.view.endEditing(true)
+    }
+    
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         
@@ -59,5 +65,7 @@ class LoginViewController: BaseViewController {
     }
 
     @IBAction func didTapSignInButton(sender: AnyObject) {
+        self.view.endEditing(true)
+        AppDelegate.sharedDelegate.presentRootViewController(BaseTabBarController.defaultTabBarController())
     }
 }

@@ -32,8 +32,8 @@ class BaseTabBarController: UITabBarController {
         
         let tabBarController = BaseTabBarController()
         tabBarController.tabBar.translucent = false
-        tabBarController.tabBar.tintColor = UIColor.whiteColor()
-        tabBarController.tabBar.barTintColor = UIColor.blackColor()
+        tabBarController.tabBar.tintColor = UIColor.blackColor()
+        tabBarController.tabBar.barTintColor = UIColor.whiteColor()
         tabBarController.viewControllers = [feedListNavigationController,
                                             productListNavigationController,
                                             addProductNavigationController,
