@@ -36,7 +36,12 @@ class NetworkManager {
         
         var headers = [String : String]()
         headers["device"] = "1"
-        headers["key"] = clientKey
+        
+        if let encryptedToken = Defaults[.Token] where tokenIsNeeded {
+            headers["token"] = encryptedToken.decrypted
+        } else {
+            headers["key"] = clientKey
+        }
 
         if let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String {
             headers["version"] = version
@@ -68,7 +73,10 @@ class NetworkManager {
         
         var headers = [String : String]()
         headers["device"] = "1"
-        headers["key"] = clientKey
+        
+        if let encryptedToken = Defaults[.Token] {
+            headers["token"] = encryptedToken.decrypted
+        }
         
         if let version = NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String {
             headers["version"] = version
