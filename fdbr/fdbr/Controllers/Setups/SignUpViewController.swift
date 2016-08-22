@@ -22,10 +22,24 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
         
         self.setupView()
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.view.endEditing(true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func didTapRightBarButtonItem(sender: AnyObject) {
+        AppDelegate.sharedDelegate.presentRootViewController(BaseTabBarController.defaultTabBarController())
     }
 
     // MARK: View
