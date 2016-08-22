@@ -36,7 +36,7 @@ class BaseViewController: UIViewController {
         }
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        self.navigationController?.navigationBar.tintColor = UIColor.blueColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
@@ -44,7 +44,7 @@ class BaseViewController: UIViewController {
     func setupNavigationBar(title title: String, translucent: Bool = false) {
         self.setupNavigationBar(translucent: translucent)
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blueColor(), NSFontAttributeName: UIFont.systemFontOfSize(16)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor(), NSFontAttributeName: UIFont.systemFontOfSize(16)]
         
         self.navigationItem.title = title
     }
