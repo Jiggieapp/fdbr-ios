@@ -74,7 +74,6 @@
 		DA100CC51D5DA74F0053F9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA100CD61D5DAB450053F9C4 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationHelper.swift; sourceTree = "<group>"; };
-		DA100CD81D5DAB450053F9C4 /* icaew-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "icaew-Bridging-Header.h"; sourceTree = "<group>"; };
 		DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitHelper.swift; sourceTree = "<group>"; };
 		DA100CE51D5DAFE00053F9C4 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
@@ -243,7 +242,6 @@
 			children = (
 				DA100CD61D5DAB450053F9C4 /* APIHelper.swift */,
 				DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */,
-				DA100CD81D5DAB450053F9C4 /* icaew-Bridging-Header.h */,
 				DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */,
 				DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */,
 			);
