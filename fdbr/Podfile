@@ -17,6 +17,7 @@ target 'fdbr' do
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'CryptoSwift', '~> 0.5'
+    pod 'TTTAttributedLabel', '~> 2.0'
 
   target 'fdbrTests' do
     inherit! :search_paths
