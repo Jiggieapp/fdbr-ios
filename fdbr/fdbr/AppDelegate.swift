@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyUserDefaults
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,9 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
         if let window = window {
-            window.backgroundColor = UIColor.blackColor()
-            window.rootViewController = BaseTabBarController.defaultTabBarController()
+            window.backgroundColor = UIColor.whiteColor()
+            
+            if let _ = Defaults[.Token] {
+                window.rootViewController = BaseTabBarController.defaultTabBarController()
+            } else {
+                window.rootViewController = UINavigationController(rootViewController: WelcomeViewController())
+            }
+            
             window.makeKeyAndVisible()
         }
         
@@ -49,6 +57,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    // MARK: Change Root View Controller
+    func presentRootViewController(viewController: UIViewController) {
+        guard let window = self.window else {
+            self.window?.rootViewController = viewController
+            return
+        }
+        
+        viewController.view.frame = window.frame
+        let snapShotView = viewController.view.snapshotViewAfterScreenUpdates(true)
+        var frame = snapShotView.frame
+        frame.origin.y = UIScreen.height()
+        snapShotView.frame = frame
+        window.addSubview(snapShotView)
+        snapShotView.layer.zPosition = 1000
+        
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .CurveEaseOut, animations: { () -> Void in
+            var frame = snapShotView.frame
+            frame.origin.y = 0
+            snapShotView.frame = frame
+        }) { (finished) -> Void in
+            snapShotView.removeFromSuperview()
+            window.rootViewController = viewController
+        }
+    }
+    
+    func dismissRootViewController(viewController: UIViewController) {
+        guard let window = self.window else {
+            self.window?.rootViewController = viewController
+            return
+        }
+        
+        let snapShotView = window.snapshotViewAfterScreenUpdates(true)
+        window.addSubview(snapShotView)
+        snapShotView.layer.zPosition = 1000
+        window.rootViewController = viewController
+        
+        UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: .CurveEaseOut, animations: { () -> Void in
+            var frame = snapShotView.frame
+            frame.origin.y = UIScreen.height()
+            snapShotView.frame = frame
+        }) { (finished) -> Void in
+            snapShotView.removeFromSuperview()
+        }
+    }
+    
 }
 
