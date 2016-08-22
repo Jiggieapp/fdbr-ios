@@ -35,6 +35,9 @@ class WelcomeViewController: BaseViewController, TTTAttributedLabelDelegate {
     }
     
     @IBAction func didTapSignUpButton(sender: AnyObject) {
+        self.presentViewController(UINavigationController(rootViewController: SignUpViewController()),
+                                   animated: true,
+                                   completion: nil)
     }
     
     // MARK: TTTAttributedLabelDelegate
