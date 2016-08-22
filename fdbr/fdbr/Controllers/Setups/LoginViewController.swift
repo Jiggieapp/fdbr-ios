@@ -43,12 +43,6 @@ class LoginViewController: BaseViewController {
         self.emailField.becomeFirstResponder()
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        self.view.endEditing(true)
-    }
-    
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         
@@ -61,6 +55,7 @@ class LoginViewController: BaseViewController {
     }
     
     override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

@@ -22,12 +22,6 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
         
         self.setupView()
     }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        self.view.endEditing(true)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -35,10 +29,12 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
     }
     
     override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didTapRightBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
         AppDelegate.sharedDelegate.presentRootViewController(BaseTabBarController.defaultTabBarController())
     }
 
