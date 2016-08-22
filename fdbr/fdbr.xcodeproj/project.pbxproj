@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		661248AF20C043146B3F9A87 /* Pods_fdbr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */; };
 		88564C3252892C8605EC8391 /* Pods_fdbrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */; };
+		932509241D6AE3D100BE129E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509231D6AE3D100BE129E /* Constant.swift */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		06D368AB8965FE2790F5CA68 /* Pods-fdbrUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FB27B60AFF50875A8EE9DB /* Pods-fdbrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrTests/Pods-fdbrTests.release.xcconfig"; sourceTree = "<group>"; };
+		932509231D6AE3D100BE129E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9339B0258770E688D8C22BE2 /* Pods-fdbrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.release.xcconfig"; sourceTree = "<group>"; };
 		C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,6 +254,7 @@
 				DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */,
 				DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */,
 				DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */,
+				932509231D6AE3D100BE129E /* Constant.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -393,7 +396,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = Jiggie;
+				ORGANIZATIONNAME = "Female Daily";
 				TargetAttributes = {
 					DA100C9D1D5DA74E0053F9C4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -597,6 +600,7 @@
 				DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */,
 				DA100CDC1D5DAB450053F9C4 /* APIHelper.swift in Sources */,
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,
+				932509241D6AE3D100BE129E /* Constant.swift in Sources */,
 				DA100CF41D5DB0AE0053F9C4 /* ProfileViewController.swift in Sources */,
 				DA100CE81D5DAFE00053F9C4 /* BaseViewController.swift in Sources */,
 				DA2595A21D6AEC81007FDABA /* SignUpViewController.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import CryptoSwift
 
 var GlobalMainQueue: dispatch_queue_t {
     return dispatch_get_main_queue()
@@ -177,8 +178,20 @@ extension NSData {
         return cleanDeviceToken.stringByReplacingOccurrencesOfString(" ", withString: "")
     }
     
+    public var decrypted: String {
+        return try! String(data: self.decrypt(AES.defaultCipher()), encoding: NSUTF8StringEncoding)!
+    }
+    
 }
 
+
+extension AES {
+    
+    public class func defaultCipher() -> AES {
+        return try! AES(key: "ujDbfwT5VT2lnyqF", iv: "7642192010572189")
+    }
+    
+}
 
 extension NSDate {
     
