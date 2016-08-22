@@ -33,6 +33,10 @@
 		DA100CFD1D5DB0E90053F9C4 /* DiscoverListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CFB1D5DB0E90053F9C4 /* DiscoverListViewController.xib */; };
 		DA100D001D5DB0FE0053F9C4 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CFE1D5DB0FE0053F9C4 /* AddProductViewController.swift */; };
 		DA100D011D5DB0FE0053F9C4 /* AddProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA100CFF1D5DB0FE0053F9C4 /* AddProductViewController.xib */; };
+		DA25959C1D6AEC52007FDABA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA25959A1D6AEC52007FDABA /* WelcomeViewController.swift */; };
+		DA25959D1D6AEC52007FDABA /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA25959B1D6AEC52007FDABA /* WelcomeViewController.xib */; };
+		DA2595A21D6AEC81007FDABA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2595A01D6AEC81007FDABA /* SignUpViewController.swift */; };
+		DA2595A31D6AEC81007FDABA /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2595A11D6AEC81007FDABA /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		DA100CFB1D5DB0E90053F9C4 /* DiscoverListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverListViewController.xib; sourceTree = "<group>"; };
 		DA100CFE1D5DB0FE0053F9C4 /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		DA100CFF1D5DB0FE0053F9C4 /* AddProductViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProductViewController.xib; sourceTree = "<group>"; };
+		DA25959A1D6AEC52007FDABA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DA25959B1D6AEC52007FDABA /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		DA2595A01D6AEC81007FDABA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DA2595A11D6AEC81007FDABA /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E9D05E7194E53DED754A9578 /* Pods-fdbrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrTests/Pods-fdbrTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -303,8 +311,12 @@
 		DA100CE91D5DB02C0053F9C4 /* Setups */ = {
 			isa = PBXGroup;
 			children = (
+				DA25959A1D6AEC52007FDABA /* WelcomeViewController.swift */,
+				DA25959B1D6AEC52007FDABA /* WelcomeViewController.xib */,
 				DA100CF61D5DB0BC0053F9C4 /* LoginViewController.swift */,
 				DA100CF71D5DB0BC0053F9C4 /* LoginViewController.xib */,
+				DA2595A01D6AEC81007FDABA /* SignUpViewController.swift */,
+				DA2595A11D6AEC81007FDABA /* SignUpViewController.xib */,
 			);
 			path = Setups;
 			sourceTree = "<group>";
@@ -421,8 +433,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2595A31D6AEC81007FDABA /* SignUpViewController.xib in Resources */,
 				DA100CF51D5DB0AE0053F9C4 /* ProfileViewController.xib in Resources */,
 				DA100CFD1D5DB0E90053F9C4 /* DiscoverListViewController.xib in Resources */,
+				DA25959D1D6AEC52007FDABA /* WelcomeViewController.xib in Resources */,
 				DA100CAE1D5DA74E0053F9C4 /* LaunchScreen.storyboard in Resources */,
 				DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */,
 				DA100CED1D5DB0880053F9C4 /* FeedListViewController.xib in Resources */,
@@ -585,10 +599,12 @@
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,
 				DA100CF41D5DB0AE0053F9C4 /* ProfileViewController.swift in Sources */,
 				DA100CE81D5DAFE00053F9C4 /* BaseViewController.swift in Sources */,
+				DA2595A21D6AEC81007FDABA /* SignUpViewController.swift in Sources */,
 				DA100CDE1D5DAB450053F9C4 /* NetworkHelper.swift in Sources */,
 				DA100CF01D5DB0990053F9C4 /* ProductListViewController.swift in Sources */,
 				DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */,
 				DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */,
+				DA25959C1D6AEC52007FDABA /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -711,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

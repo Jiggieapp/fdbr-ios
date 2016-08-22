@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA100C9D1D5DA74E0053F9C4"
-               BuildableName = "fdbr.app"
+               BuildableName = "Female Daily.app"
                BlueprintName = "fdbr"
                ReferencedContainer = "container:fdbr.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA100C9D1D5DA74E0053F9C4"
-            BuildableName = "fdbr.app"
+            BuildableName = "Female Daily.app"
             BlueprintName = "fdbr"
             ReferencedContainer = "container:fdbr.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA100C9D1D5DA74E0053F9C4"
-            BuildableName = "fdbr.app"
+            BuildableName = "Female Daily.app"
             BlueprintName = "fdbr"
             ReferencedContainer = "container:fdbr.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DA100C9D1D5DA74E0053F9C4"
-            BuildableName = "fdbr.app"
+            BuildableName = "Female Daily.app"
             BlueprintName = "fdbr"
             ReferencedContainer = "container:fdbr.xcodeproj">
          </BuildableReference>
