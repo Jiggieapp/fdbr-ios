@@ -10,6 +10,7 @@
 		661248AF20C043146B3F9A87 /* Pods_fdbr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */; };
 		88564C3252892C8605EC8391 /* Pods_fdbrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */; };
 		932509241D6AE3D100BE129E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509231D6AE3D100BE129E /* Constant.swift */; };
+		9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FB27B60AFF50875A8EE9DB /* Pods-fdbrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrTests/Pods-fdbrTests.release.xcconfig"; sourceTree = "<group>"; };
 		932509231D6AE3D100BE129E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHelper.swift; sourceTree = "<group>"; };
 		9339B0258770E688D8C22BE2 /* Pods-fdbrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.release.xcconfig"; sourceTree = "<group>"; };
 		C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +143,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9325092B1D6B122000BE129E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A7B1A06AA29B8E26BB893AF5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +189,7 @@
 		DA100CA01D5DA74E0053F9C4 /* fdbr */ = {
 			isa = PBXGroup;
 			children = (
-				DA100CD11D5DAB450053F9C4 /* Components */,
+				9325092B1D6B122000BE129E /* Components */,
 				DA100CD21D5DAB450053F9C4 /* Controllers */,
 				DA100CD31D5DAB450053F9C4 /* ExtraLibraries */,
 				DA100CD41D5DAB450053F9C4 /* Models */,
@@ -209,13 +219,6 @@
 				DA100CC51D5DA74F0053F9C4 /* Info.plist */,
 			);
 			path = fdbrUITests;
-			sourceTree = "<group>";
-		};
-		DA100CD11D5DAB450053F9C4 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		DA100CD21D5DAB450053F9C4 /* Controllers */ = {
@@ -597,6 +600,7 @@
 				DA100CDD1D5DAB450053F9C4 /* FoundationHelper.swift in Sources */,
 				DA100D001D5DB0FE0053F9C4 /* AddProductViewController.swift in Sources */,
 				DA100CFC1D5DB0E90053F9C4 /* DiscoverListViewController.swift in Sources */,
+				9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */,
 				DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */,
 				DA100CDC1D5DAB450053F9C4 /* APIHelper.swift in Sources */,
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,

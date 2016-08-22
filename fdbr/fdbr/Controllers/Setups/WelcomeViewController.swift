@@ -32,18 +32,16 @@ class WelcomeViewController: BaseViewController, TTTAttributedLabelDelegate {
     }
 
     @IBAction func didTapLoginWithFacebookButton(sender: AnyObject) {
-        
     }
     
     @IBAction func didTapSignUpButton(sender: AnyObject) {
-        self.presentViewController(UINavigationController(rootViewController:SignUpViewController()), animated: true, completion: nil)
     }
     
     // MARK: TTTAttributedLabelDelegate
     func attributedLabel(label: TTTAttributedLabel!, didSelectLinkWithURL url: NSURL!) {
-        if url.URLString == "kLoginLink" {
-            self.presentViewController(UINavigationController(rootViewController:LoginViewController()), animated: true, completion: nil)
-        }
+        self.presentViewController(UINavigationController(rootViewController: LoginViewController()),
+                                   animated: true,
+                                   completion: nil)
     }
     
 }
