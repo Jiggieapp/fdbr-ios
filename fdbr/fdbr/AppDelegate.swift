@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let _ = Defaults[.Token] {
                 window.rootViewController = BaseTabBarController.defaultTabBarController()
             } else {
-                window.rootViewController = UINavigationController(rootViewController: WelcomeViewController())
+                window.rootViewController = WelcomeViewController()
             }
             
             window.makeKeyAndVisible()

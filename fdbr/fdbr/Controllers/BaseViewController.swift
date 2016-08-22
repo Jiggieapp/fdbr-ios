@@ -26,17 +26,17 @@ class BaseViewController: UIViewController {
     func setupNavigationBar(translucent translucent: Bool) {
         if translucent {
             self.navigationController?.navigationBar.translucent = true
-            self.navigationController?.navigationBar.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0)
+            self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
             
             self.extendedLayoutIncludesOpaqueBars = false
             self.automaticallyAdjustsScrollViewInsets = false
         } else {
             self.navigationController?.navigationBar.translucent = false
-            self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+            self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         }
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
-        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.blueColor()
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
@@ -44,7 +44,7 @@ class BaseViewController: UIViewController {
     func setupNavigationBar(title title: String, translucent: Bool = false) {
         self.setupNavigationBar(translucent: translucent)
         
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(16)]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blueColor(), NSFontAttributeName: UIFont.systemFontOfSize(16)]
         
         self.navigationItem.title = title
     }

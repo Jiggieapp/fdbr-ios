@@ -39,6 +39,9 @@ class WelcomeViewController: BaseViewController, TTTAttributedLabelDelegate {
     
     // MARK: TTTAttributedLabelDelegate
     func attributedLabel(label: TTTAttributedLabel!, didSelectLinkWithURL url: NSURL!) {
+        self.presentViewController(UINavigationController(rootViewController: LoginViewController()),
+                                   animated: true,
+                                   completion: nil)
     }
     
 }

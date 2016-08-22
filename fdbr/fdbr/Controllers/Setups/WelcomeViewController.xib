@@ -69,9 +69,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="90" y="762" width="221" height="18"/>
-                    </variation>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -96,13 +93,13 @@
                     <exclude reference="xmw-8o-4Lk"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="1BX-1L-rGt"/>
+                    <exclude reference="dRR-0e-WsR"/>
+                    <exclude reference="flg-B2-mYq"/>
                     <exclude reference="Y4E-MN-jJv"/>
                     <exclude reference="zQa-kE-CDl"/>
                     <exclude reference="FCg-7d-scM"/>
                     <exclude reference="cAH-dn-kza"/>
-                    <exclude reference="1BX-1L-rGt"/>
-                    <exclude reference="dRR-0e-WsR"/>
-                    <exclude reference="flg-B2-mYq"/>
                     <exclude reference="MSo-ER-Tlj"/>
                     <exclude reference="rLi-hy-vfw"/>
                     <exclude reference="t42-EU-LDF"/>
@@ -116,13 +113,13 @@
                     <include reference="xmw-8o-4Lk"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="1BX-1L-rGt"/>
+                    <include reference="dRR-0e-WsR"/>
+                    <include reference="flg-B2-mYq"/>
                     <include reference="Y4E-MN-jJv"/>
                     <include reference="zQa-kE-CDl"/>
                     <include reference="FCg-7d-scM"/>
                     <include reference="cAH-dn-kza"/>
-                    <include reference="1BX-1L-rGt"/>
-                    <include reference="dRR-0e-WsR"/>
-                    <include reference="flg-B2-mYq"/>
                     <include reference="MSo-ER-Tlj"/>
                     <include reference="rLi-hy-vfw"/>
                     <include reference="t42-EU-LDF"/>
