@@ -7,29 +7,49 @@
 //
 
 import UIKit
+import TTTAttributedLabel
 
-class SignUpViewController: BaseViewController {
+class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
 
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var tncLabel: TTTAttributedLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.setupView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: View
+    private func setupView() {
+        self.setupNavigationBar(title: "Sign Up")
+        self.setupLeftNavigationBar(withTitle: "Cancel")
+        self.setupRightNavigationBar(withTitle: "Done")
+        
+        let tncString: NSString = "By signing up, you agree to our Terms of Service & Privacy Policy"
+        
+        self.tncLabel.linkAttributes = [String(kCTForegroundColorAttributeName) : UIColor.blueColor(),
+                                          String(kCTUnderlineStyleAttributeName) : false]
+        self.tncLabel.addLinkToURL(NSURL(string: "kTNCLink"), withRange: tncString.rangeOfString("Terms of Service"))
+        self.tncLabel.addLinkToURL(NSURL(string: "kPrivacyLink"), withRange: tncString.rangeOfString("Privacy Policy"))
+        self.tncLabel.delegate = self
     }
-    */
 
+    // MARK: TTTAttributedLabelDelegate
+    func attributedLabel(label: TTTAttributedLabel!, didSelectLinkWithURL url: NSURL!) {
+        if url.URLString == "kTNCLink" {
+            
+        } else if url.URLString == "kPrivacyLink" {
+        
+        }
+        
+    }
 }
