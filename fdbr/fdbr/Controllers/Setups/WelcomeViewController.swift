@@ -16,8 +16,6 @@ class WelcomeViewController: BaseViewController, TTTAttributedLabelDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.hideNavigationBar()
-        
         let loginString: NSString = "Already have an account? Log in"
         
         self.loginLabel.linkAttributes = [String(kCTForegroundColorAttributeName) : UIColor.blueColor(),

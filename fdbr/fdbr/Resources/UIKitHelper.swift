@@ -117,15 +117,6 @@ extension UIImage {
 }
 
 
-extension UINavigationController {
-    
-    public override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
-    
-}
-
-
 extension UIImageView {
     
     /// Rotates image to the right.
