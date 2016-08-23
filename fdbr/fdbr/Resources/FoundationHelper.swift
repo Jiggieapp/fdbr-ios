@@ -356,3 +356,16 @@ extension CollectionType where Generator.Element: Equatable {
     }
     
 }
+
+
+public enum SchemeConfiguration: String {
+    case Debug = "Debug"
+    case Release = "Release"
+}
+
+extension NSBundle {
+    
+    public class func schemConfiguration() -> SchemeConfiguration {
+        return SchemeConfiguration(rawValue: NSBundle.mainBundle().infoDictionary!["Configuration"] as! String)!
+    }
+}
