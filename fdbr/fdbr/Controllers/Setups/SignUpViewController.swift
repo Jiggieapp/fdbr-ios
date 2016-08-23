@@ -27,6 +27,16 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func didTapRightBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
+        AppDelegate.sharedDelegate.presentRootViewController(BaseTabBarController.defaultTabBarController())
+    }
 
     // MARK: View
     private func setupView() {

@@ -55,9 +55,12 @@ class LoginViewController: BaseViewController {
     }
     
     override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.view.endEditing(true)
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
     @IBAction func didTapSignInButton(sender: AnyObject) {
+        self.view.endEditing(true)
+        AppDelegate.sharedDelegate.presentRootViewController(BaseTabBarController.defaultTabBarController())
     }
 }

@@ -13,7 +13,7 @@ import SystemConfiguration
 
 class NetworkManager {
     
-    static let APIBaseURL = "http://icaew-admin.jiggieapp.com/api/"
+    static let APIBaseURL = NSBundle.mainBundle().infoDictionary!["API Base URL"] as! String
     static let clientKey = "client01-jdfijfiosdjfdoYFBSDFnafE084314987FDBbhhjdsf89283847718hhfHIDHFKHSFKShhihfiewbbbvvQQhfurbb874820001240088"
     
     /**
