@@ -11,6 +11,7 @@
 		88564C3252892C8605EC8391 /* Pods_fdbrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F74F82E4AF71B381ADB89B0 /* Pods_fdbrUITests.framework */; };
 		932509241D6AE3D100BE129E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509231D6AE3D100BE129E /* Constant.swift */; };
 		9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */; };
+		932509301D6C118B00BE129E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092F1D6C118B00BE129E /* User.swift */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		39FB27B60AFF50875A8EE9DB /* Pods-fdbrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrTests/Pods-fdbrTests.release.xcconfig"; sourceTree = "<group>"; };
 		932509231D6AE3D100BE129E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHelper.swift; sourceTree = "<group>"; };
+		9325092F1D6C118B00BE129E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9339B0258770E688D8C22BE2 /* Pods-fdbrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.release.xcconfig"; sourceTree = "<group>"; };
 		C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9325092E1D6C116B00BE129E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9325092F1D6C118B00BE129E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A7B1A06AA29B8E26BB893AF5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,7 +202,7 @@
 				9325092B1D6B122000BE129E /* Components */,
 				DA100CD21D5DAB450053F9C4 /* Controllers */,
 				DA100CD31D5DAB450053F9C4 /* ExtraLibraries */,
-				DA100CD41D5DAB450053F9C4 /* Models */,
+				9325092E1D6C116B00BE129E /* Models */,
 				DA100CD51D5DAB450053F9C4 /* Resources */,
 				DA100CDB1D5DAB450053F9C4 /* Views */,
 				DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */,
@@ -241,13 +251,6 @@
 			children = (
 			);
 			path = ExtraLibraries;
-			sourceTree = "<group>";
-		};
-		DA100CD41D5DAB450053F9C4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		DA100CD51D5DAB450053F9C4 /* Resources */ = {
@@ -610,6 +613,7 @@
 				DA2595A21D6AEC81007FDABA /* SignUpViewController.swift in Sources */,
 				DA100CDE1D5DAB450053F9C4 /* NetworkHelper.swift in Sources */,
 				DA100CF01D5DB0990053F9C4 /* ProductListViewController.swift in Sources */,
+				932509301D6C118B00BE129E /* User.swift in Sources */,
 				DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */,
 				DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */,
 				DA25959C1D6AEC52007FDABA /* WelcomeViewController.swift in Sources */,
@@ -746,7 +750,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D071DA9CFBCC7EC22E2AC452 /* Pods-fdbr.debug.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "http://52.76.229.117/app/v1/";
+				API_BASE_URL = "http://api-dev.femaledaily.net/app/v1/";
 				APP_NAME = "Female Daily Dev";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID = "com.femaledaily.fdbr-dev";
@@ -762,7 +766,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "https://api.femaledaily.com/app/v1";
+				API_BASE_URL = "https://api.femaledaily.com/app/v1/";
 				APP_NAME = "Female Daily";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID = com.femaledaily.fdbr;
