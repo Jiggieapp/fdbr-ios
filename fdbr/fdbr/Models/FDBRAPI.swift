@@ -1,0 +1,79 @@
+//
+//  FDBRAPI.swift
+//  fdbr
+//
+//  Created by Mohammad Nuruddin Effendi on 8/23/16.
+//  Copyright © 2016 Female Daily. All rights reserved.
+//
+
+import Foundation
+
+/**
+ Used to represent whether a request was successful or encountered an error.
+ 
+ - Success  : The request and all post processing operations were successful resulting in
+ the native model serialization of the provided associated value.
+ - Failure  : The request encountered a failure due to invalid data or call conditions.
+ - Error    : The request encountered an error due to an error on the server,
+ fail when serialize the model, or unknown error.
+ */
+public enum APIResult<Value> {
+    case Success(Value)
+    case Failure(String)
+    case Error(NSError)
+}
+
+
+/// API endpoint constants.
+public struct APIEndpoint {
+    
+    static let Login = "login/"
+    static let Register = "register/"
+}
+
+typealias UserRegisterCompletionHandler = (result: APIResult<String>) -> Void
+
+struct FDBRAPI {
+
+    // MARK: Authentication
+    /**
+     Registering user to FDBR.
+     
+     - parameter username:              The user's username.
+     - parameter password:              The user's password.
+     - parameter email:                 The user's email.
+     - parameter completionHandler:     The closure to be executed once the request has finished.
+     */
+    static func register(username username: String, password: String, email: String, completionHandler: UserRegisterCompletionHandler) {
+        let parameters = ["username" : username,
+                          "password" : password,
+                          "email" : email]
+        
+        if let request = NetworkManager.request(.POST, APIEndpoint.Register, parameters: parameters, encoding: .JSON) {
+            request.responseJSON(completionHandler: { (response) in
+                let result: APIResult<String>!
+                
+                switch response.result {
+                case .Success(let json):
+                    guard let data = json["data"] as? [String : AnyObject] else {
+                        result = .Failure("json data is not dictionary")
+                        break
+                    }
+                    
+                    guard let token = data["token"] as? String else {
+                        result = .Failure("json token is not String")
+                        break
+                    }
+                    
+                    result = .Success(token)
+                    
+                case .Failure(let error):
+                    result = .Error(error)
+                }
+                
+                completionHandler(result: result)
+            })
+        }
+    }
+    
+}

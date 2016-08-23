@@ -12,13 +12,13 @@
 		932509241D6AE3D100BE129E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509231D6AE3D100BE129E /* Constant.swift */; };
 		9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */; };
 		932509301D6C118B00BE129E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092F1D6C118B00BE129E /* User.swift */; };
+		932509321D6C356000BE129E /* FDBRAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509311D6C356000BE129E /* FDBRAPI.swift */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
 		DA100CAE1D5DA74E0053F9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAC1D5DA74E0053F9C4 /* LaunchScreen.storyboard */; };
 		DA100CB91D5DA74F0053F9C4 /* fdbrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CB81D5DA74F0053F9C4 /* fdbrTests.swift */; };
 		DA100CC41D5DA74F0053F9C4 /* fdbrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CC31D5DA74F0053F9C4 /* fdbrUITests.swift */; };
-		DA100CDC1D5DAB450053F9C4 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CD61D5DAB450053F9C4 /* APIHelper.swift */; };
 		DA100CDD1D5DAB450053F9C4 /* FoundationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */; };
 		DA100CDE1D5DAB450053F9C4 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */; };
 		DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */; };
@@ -66,6 +66,7 @@
 		932509231D6AE3D100BE129E /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHelper.swift; sourceTree = "<group>"; };
 		9325092F1D6C118B00BE129E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		932509311D6C356000BE129E /* FDBRAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBRAPI.swift; sourceTree = "<group>"; };
 		9339B0258770E688D8C22BE2 /* Pods-fdbrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.release.xcconfig"; sourceTree = "<group>"; };
 		C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +83,6 @@
 		DA100CBF1D5DA74F0053F9C4 /* fdbrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fdbrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA100CC31D5DA74F0053F9C4 /* fdbrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fdbrUITests.swift; sourceTree = "<group>"; };
 		DA100CC51D5DA74F0053F9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA100CD61D5DAB450053F9C4 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationHelper.swift; sourceTree = "<group>"; };
 		DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitHelper.swift; sourceTree = "<group>"; };
@@ -157,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				9325092F1D6C118B00BE129E /* User.swift */,
+				932509311D6C356000BE129E /* FDBRAPI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,7 +257,6 @@
 		DA100CD51D5DAB450053F9C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA100CD61D5DAB450053F9C4 /* APIHelper.swift */,
 				DA100CD71D5DAB450053F9C4 /* FoundationHelper.swift */,
 				DA100CD91D5DAB450053F9C4 /* NetworkHelper.swift */,
 				DA100CDA1D5DAB450053F9C4 /* UIKitHelper.swift */,
@@ -605,7 +605,6 @@
 				DA100CFC1D5DB0E90053F9C4 /* DiscoverListViewController.swift in Sources */,
 				9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */,
 				DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */,
-				DA100CDC1D5DAB450053F9C4 /* APIHelper.swift in Sources */,
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,
 				932509241D6AE3D100BE129E /* Constant.swift in Sources */,
 				DA100CF41D5DB0AE0053F9C4 /* ProfileViewController.swift in Sources */,
@@ -616,6 +615,7 @@
 				932509301D6C118B00BE129E /* User.swift in Sources */,
 				DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */,
 				DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */,
+				932509321D6C356000BE129E /* FDBRAPI.swift in Sources */,
 				DA25959C1D6AEC52007FDABA /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

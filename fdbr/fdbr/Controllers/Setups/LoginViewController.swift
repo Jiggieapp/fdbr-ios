@@ -34,6 +34,7 @@ class LoginViewController: BaseViewController {
                 self.view.layoutIfNeeded()
                 }, completion: nil)
         }
+        
     }
     
     override func viewDidAppear(animated: Bool) {
