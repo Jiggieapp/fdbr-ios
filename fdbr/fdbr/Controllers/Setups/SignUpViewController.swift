@@ -61,13 +61,5 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
         
         }
     }
-    
-    // MARK: --Navigation Bar Actions
-    override func didTapLeftBarButtonItem(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func didTapRightBarButtonItem(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+
 }
