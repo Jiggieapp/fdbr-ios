@@ -13,6 +13,8 @@
 		9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */; };
 		932509301D6C118B00BE129E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9325092F1D6C118B00BE129E /* User.swift */; };
 		932509321D6C356000BE129E /* FDBRAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509311D6C356000BE129E /* FDBRAPI.swift */; };
+		932509341D6C580B00BE129E /* BeautyConcerns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509331D6C580B00BE129E /* BeautyConcerns.swift */; };
+		932509361D6C58FE00BE129E /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932509351D6C58FE00BE129E /* Reference.swift */; };
 		C853737D8E927E120D83935B /* Pods_fdbrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73BDD3346FF63D49F4739F /* Pods_fdbrTests.framework */; };
 		DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA100CA11D5DA74E0053F9C4 /* AppDelegate.swift */; };
 		DA100CAB1D5DA74E0053F9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA100CAA1D5DA74E0053F9C4 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		9325092C1D6B122000BE129E /* KeyboardNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationHelper.swift; sourceTree = "<group>"; };
 		9325092F1D6C118B00BE129E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		932509311D6C356000BE129E /* FDBRAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDBRAPI.swift; sourceTree = "<group>"; };
+		932509331D6C580B00BE129E /* BeautyConcerns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeautyConcerns.swift; sourceTree = "<group>"; };
+		932509351D6C58FE00BE129E /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		9339B0258770E688D8C22BE2 /* Pods-fdbrUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbrUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fdbrUITests/Pods-fdbrUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C35A654988F18842326CD604 /* Pods-fdbr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fdbr.release.xcconfig"; path = "Pods/Target Support Files/Pods-fdbr/Pods-fdbr.release.xcconfig"; sourceTree = "<group>"; };
 		C669C4D72FC7301FFA33BD5C /* Pods_fdbr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fdbr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,8 +160,10 @@
 		9325092E1D6C116B00BE129E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9325092F1D6C118B00BE129E /* User.swift */,
 				932509311D6C356000BE129E /* FDBRAPI.swift */,
+				9325092F1D6C118B00BE129E /* User.swift */,
+				932509331D6C580B00BE129E /* BeautyConcerns.swift */,
+				932509351D6C58FE00BE129E /* Reference.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -604,6 +610,7 @@
 				DA100D001D5DB0FE0053F9C4 /* AddProductViewController.swift in Sources */,
 				DA100CFC1D5DB0E90053F9C4 /* DiscoverListViewController.swift in Sources */,
 				9325092D1D6B122000BE129E /* KeyboardNotificationHelper.swift in Sources */,
+				932509361D6C58FE00BE129E /* Reference.swift in Sources */,
 				DA100CEC1D5DB0880053F9C4 /* FeedListViewController.swift in Sources */,
 				DA100CA21D5DA74E0053F9C4 /* AppDelegate.swift in Sources */,
 				932509241D6AE3D100BE129E /* Constant.swift in Sources */,
@@ -615,6 +622,7 @@
 				932509301D6C118B00BE129E /* User.swift in Sources */,
 				DA100CF81D5DB0BC0053F9C4 /* LoginViewController.swift in Sources */,
 				DA100CDF1D5DAB450053F9C4 /* UIKitHelper.swift in Sources */,
+				932509341D6C580B00BE129E /* BeautyConcerns.swift in Sources */,
 				932509321D6C356000BE129E /* FDBRAPI.swift in Sources */,
 				DA25959C1D6AEC52007FDABA /* WelcomeViewController.swift in Sources */,
 			);
@@ -750,7 +758,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D071DA9CFBCC7EC22E2AC452 /* Pods-fdbr.debug.xcconfig */;
 			buildSettings = {
-				API_BASE_URL = "http://52.76.229.117/app/v1/";
+				API_BASE_URL = "http://api-dev.femaledaily/app/v1/";
 				APP_NAME = "Female Daily Dev";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_ID = "com.femaledaily.fdbr-dev";
