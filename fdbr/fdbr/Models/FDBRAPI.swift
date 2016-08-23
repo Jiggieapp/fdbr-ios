@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Mantle
 
 /**
  Used to represent whether a request was successful or encountered an error.
@@ -32,6 +33,7 @@ public struct APIEndpoint {
 }
 
 typealias UserRegisterCompletionHandler = (result: APIResult<String>) -> Void
+typealias UserLoginCompletionHandler = (result: APIResult<(String, User)>) -> Void
 
 struct FDBRAPI {
 
@@ -66,6 +68,53 @@ struct FDBRAPI {
                     }
                     
                     result = .Success(token)
+                    
+                case .Failure(let error):
+                    result = .Error(error)
+                }
+                
+                completionHandler(result: result)
+            })
+        }
+    }
+    
+    /**
+     Logging in user into FDBR.
+     
+     - parameter username:              The user's username / email.
+     - parameter password:              The user's password.
+     - parameter completionHandler:     The closure to be executed once the request has finished.
+     */
+    static func login(username username: String, password: String, completionHandler: UserLoginCompletionHandler) {
+        let parameters = ["username" : username,
+                          "password" : password]
+        
+        if let request = NetworkManager.request(.POST, APIEndpoint.Register, parameters: parameters, encoding: .JSON) {
+            request.responseJSON(completionHandler: { (response) in
+                let result: APIResult<(String, User)>!
+                
+                switch response.result {
+                case .Success(let json):
+                    guard let data = json["data"] as? [String : AnyObject] else {
+                        result = .Failure("json data is not dictionary")
+                        break
+                    }
+                    guard let token = data["token"] as? String else {
+                        result = .Failure("json token is not string")
+                        break
+                    }
+                    guard let profile = data["rows"] as? [String : AnyObject] else {
+                        result = .Failure("json rows is not dictionary")
+                        break
+                    }
+                    
+                    do {
+                        let user = try MTLJSONAdapter.modelOfClass(User.self, fromJSONDictionary: profile) as! User
+                        result = .Success((token, user))
+                        
+                    } catch (let error) {
+                        result = .Error(error as NSError)
+                    }
                     
                 case .Failure(let error):
                     result = .Error(error)
