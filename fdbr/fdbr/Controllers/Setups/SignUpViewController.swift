@@ -60,6 +60,14 @@ class SignUpViewController: BaseViewController, TTTAttributedLabelDelegate {
         } else if url.URLString == "kPrivacyLink" {
         
         }
-        
+    }
+    
+    // MARK: --Navigation Bar Actions
+    override func didTapLeftBarButtonItem(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func didTapRightBarButtonItem(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }
