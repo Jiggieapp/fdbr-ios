@@ -70,7 +70,7 @@ struct FDBRAPI {
                     result = .Success(token)
                     
                 case .Failure(let error):
-                    result = .Error(error)
+                    result = .Error(NSError.createDefaultError(fromError: error))
                 }
                 
                 completionHandler(result: result)
@@ -117,7 +117,7 @@ struct FDBRAPI {
                     }
                     
                 case .Failure(let error):
-                    result = .Error(error)
+                    result = .Error(NSError.createDefaultError(fromError: error))
                 }
                 
                 completionHandler(result: result)

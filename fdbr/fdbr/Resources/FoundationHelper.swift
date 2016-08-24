@@ -296,18 +296,15 @@ public extension _ArrayType where Generator.Element == UInt8 {
 
 extension NSError {
     
-    @nonobjc public static let Domain = "\(NSBundle.mainBundle().bundleIdentifier).error"
-    
     /**
      Creates an `NSError` with the given error code and failure reason.
      
-     - parameter domain:        The optional domain value for custom error
      - parameter code:          The error code.
      - parameter failureReason: The failure reason.
      
      - returns: An `NSError` with the given error optional domain, code and failure reason.
      */
-    public class func error(domain domain: String? = nil, code: Int, failureReason: String, suggestion: String? = nil) -> NSError {
+    public convenience init(code: Int, failureReason: String, suggestion: String? = nil) {
         var userInfo = [NSLocalizedDescriptionKey : failureReason]
         
         if let suggestion = suggestion {
@@ -315,23 +312,34 @@ extension NSError {
                         NSLocalizedRecoverySuggestionErrorKey : suggestion]
         }
         
-        return NSError(domain: domain != nil ? Domain+"."+domain! : Domain,
-                       code: code,
-                       userInfo: userInfo)
+        self.init(domain: "\(NSBundle.mainBundle().bundleIdentifier).error",
+                  code: code,
+                  userInfo: userInfo)
     }
     
-    /**
-     Creates an `NSError` with the given JSON object from API response.
-     
-     - parameter json: JSON object from API response.
-     
-     - returns: An `NSError` with the given JSON object from API response.
-     */
-    public class func errorWithJSON(json: AnyObject) -> NSError {
-        let code = json["code"] as! Int
-        let message = json["message"] as! String
+    public static func createDefaultError(fromError error: NSError) -> NSError {
+        var error = error
+        if let statusCode = error.userInfo["StatusCode"] as? Int {
+            if statusCode == 400 {
+                error = NSError(code: statusCode,
+                                failureReason: "Server cannot process the request",
+                                suggestion: "Unable to complete your request. Please try again.")
+            } else if statusCode == 401 {
+                error = NSError(code: statusCode,
+                                failureReason: "Token is expired",
+                                suggestion: "Please re-login")
+            } else if statusCode == 403 {
+                error = NSError(code: statusCode,
+                                failureReason: "Server Error",
+                                suggestion: "The server encountered an internal error. Please try again later")
+            } else if statusCode == 422 {
+                error = NSError(code: statusCode,
+                                failureReason: "User already exists",
+                                suggestion: "Please change your username or email")
+            }
+        }
         
-        return self.error(code: code, failureReason: message)
+        return error
     }
     
 }
