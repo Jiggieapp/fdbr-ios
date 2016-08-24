@@ -10,21 +10,21 @@ import Mantle
 
 class BeautyConcerns: MTLModel, MTLJSONSerializing {
 
-    private(set) var hair = Reference()
-    private(set) var skin = Reference()
-    private(set) var body = Reference()
+    private(set) var hair = [Reference]()
+    private(set) var skin = [Reference]()
+    private(set) var body = [Reference]()
     
     
     static func hairJSONTransformer() -> NSValueTransformer {
-        return MTLJSONAdapter.dictionaryTransformerWithModelClass(BeautyConcerns.self)
+        return MTLJSONAdapter.arrayTransformerWithModelClass(Reference.self)
     }
     
     static func skinJSONTransformer() -> NSValueTransformer {
-        return MTLJSONAdapter.dictionaryTransformerWithModelClass(BeautyConcerns.self)
+        return MTLJSONAdapter.arrayTransformerWithModelClass(Reference.self)
     }
     
     static func bodyJSONTransformer() -> NSValueTransformer {
-        return MTLJSONAdapter.dictionaryTransformerWithModelClass(BeautyConcerns.self)
+        return MTLJSONAdapter.arrayTransformerWithModelClass(Reference.self)
     }
     
     static func JSONKeyPathsByPropertyKey() -> [NSObject : AnyObject]! {
