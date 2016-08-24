@@ -99,7 +99,7 @@ class BaseViewController: UIViewController {
     
     // MARK: --Back Button
     func removeBackButtonTitle() {
-        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+        let backButton = UIBarButtonItem(title: "", style: UIBarBttonItemStyle.Plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem = backButton
     }
     

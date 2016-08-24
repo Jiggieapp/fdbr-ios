@@ -13,6 +13,7 @@ PODS:
   - SVProgressHUD (2.0.3)
   - SwiftHEXColors (1.0.4)
   - SwiftyUserDefaults (2.2.0)
+  - TPKeyboardAvoiding (1.3)
   - TTTAttributedLabel (2.0.0)
   - UIAlertControllerExtension (1.1)
 
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - SVProgressHUD (~> 2.0)
   - SwiftHEXColors (~> 1.0)
   - SwiftyUserDefaults (~> 2.2)
+  - TPKeyboardAvoiding (~> 1.3)
   - TTTAttributedLabel (~> 2.0)
   - UIAlertControllerExtension (~> 1.1)
 
@@ -39,9 +41,10 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftHEXColors: b0ecc7bd83a1aa2e1956f9ba51f55ebb2bcf86ef
   SwiftyUserDefaults: e7c8197a9d4068702e7f2406a968cae413b8de27
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIAlertControllerExtension: d3aaf48590f182096b8bb81997ae54f24ccc07ab
 
-PODFILE CHECKSUM: 7b7a5342e22772e79e46c7d2d1942366d2577124
+PODFILE CHECKSUM: b479359eaef8b3232da43f90ae342aead3f3b15a
 
 COCOAPODS: 1.0.1
