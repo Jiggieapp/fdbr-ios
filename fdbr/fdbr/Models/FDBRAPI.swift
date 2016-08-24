@@ -89,7 +89,7 @@ struct FDBRAPI {
         let parameters = ["username" : username,
                           "password" : password]
         
-        if let request = NetworkManager.request(.POST, APIEndpoint.Register, parameters: parameters, encoding: .JSON) {
+        if let request = NetworkManager.request(.POST, APIEndpoint.Login, parameters: parameters, encoding: .JSON) {
             request.responseJSON(completionHandler: { (response) in
                 let result: APIResult<(String, User)>!
                 
