@@ -10,25 +10,25 @@ import Mantle
 
 class User: MTLModel, MTLJSONSerializing {
     
-    private(set) var id = 0
-    private(set) var username = ""
-    private(set) var fullname = ""
-    private(set) var email = ""
-    private(set) var about = ""
-    private(set) var bio = ""
+    private(set) var id = Int()
+    private(set) var username = String()
+    private(set) var fullname = String()
+    private(set) var email = String()
+    private(set) var about = String()
+    private(set) var bio = String()
     
-    private(set) var hairType = 0
-    private(set) var hairTexture = 0
-    private(set) var skinType = 0
-    private(set) var skinUndertone = 0
-    private(set) var skinTone = 0
+    private(set) var hairType = Int()
+    private(set) var hairTexture = Int()
+    private(set) var skinType = Int()
+    private(set) var skinUndertone = Int()
+    private(set) var skinTone = Int()
     
     private(set) var beautyConcerns = BeautyConcerns()
     
-    private(set) var totalReviews = 0
-    private(set) var totalFollowers = 0
-    private(set) var totalFollowing = 0
-    private(set) var totalPoints = 0
+    private(set) var totalReviews = Int()
+    private(set) var totalFollowers = Int()
+    private(set) var totalFollowing = Int()
+    private(set) var totalPoints = Int()
 
     
     static func beautyConcernsJSONTransformer() -> NSValueTransformer {
