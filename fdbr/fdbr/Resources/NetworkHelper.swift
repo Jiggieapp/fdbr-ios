@@ -51,7 +51,7 @@ class NetworkManager {
             URLString,
             parameters: parameters,
             encoding: encoding,
-            headers: headers)
+            headers: headers).validate()
     }
     
     /**
